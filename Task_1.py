@@ -15,8 +15,6 @@ class ExcelFilter:
         self.var_column = tk.StringVar()
         self.var = tk.StringVar()
 
-        self.workbook = openpyxl.Workbook()
-        self.sheet = self.workbook.active
         self.create_widgets()
 
     def create_widgets(self):

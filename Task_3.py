@@ -1,5 +1,5 @@
 def find_triplets(arr):
-	res = []
+	result = []
 	n = len(arr)
 
 	for i in range(n - 2):
@@ -7,9 +7,9 @@ def find_triplets(arr):
 			for k in range(j + 1, n):
 
 				if arr[i] + arr[j] + arr[k] == 0:
-					if [arr[i], arr[j], arr[k]] not in res:
-						res.append([arr[i], arr[j], arr[k]])
-	return res
+					if [arr[i], arr[j], arr[k]] not in result:
+						result.append([arr[i], arr[j], arr[k]])
+	return result
 
 
 arr = [-1, 0, 1]
